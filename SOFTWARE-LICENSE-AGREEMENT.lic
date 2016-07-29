@@ -1,0 +1,32 @@
+SOFTWARE LICENSE AGREEMENT
+
+The following license governs your NON-COMMERCIAL use of the Software.  Commercial use is strictly prohibited.
+
+This Software License Agreement (“License”) is a legal agreement between you and the Allen Institute for Artificial Intelligence (“AI” or “we”) for the software made available in this GitHub repository, including all source code, and any related materials, documentation, files, media, and any updates or revisions we may provide (“Software”).
+ 
+By using, copying, reproducing, adapting, modifying, distributing, or otherwise utilizing this Software, you agree to be bound by the terms of this License. If you do not agree, do use the Software.   
+ 
+PERMISSIONS AND RESTRICTIONS:
+You may copy, reproduce, adapt, modify, distribute, or otherwise utilize this Software for any NON-COMMERCIAL purpose.  Examples of acceptable, non-commercial, use include research and education, and the inclusion of the Software into materials used for those purposes. 
+Any and all commercial use of this Software, or any adapted, modified, or derivative works thereof, is strictly prohibited.  Prohibited commercial use includes, but is not limited to: selling, leasing, or licensing the Software for monetary or other commercial gain, using the Software in connection with business functions or operations, or embedding or installing the Software into products for your own commercial gain or for the commercial gain of third parties. 
+If you are uncertain as to whether your contemplated use of the Software is permissible, please do not use this Software and instead contact AI for further information.  
+CONDITIONS FOR USE:
+We require you also comply with the following conditions of use for the Software:
+Do not remove any copyright or other notices from the Software.
+Provide notice that this Software is used under this License, and that all use is for non-commercial purposes.
+Any distribution of the Software or any derivative works of the Software must be under the same terms and conditions as in this License.  Furthermore, the disclaimer of warranties in Section 7 of this License must be included in any distribution of the Software to third parties.
+If you adapt, modify, or create derivative versions of the Software, indicate that you’ve modified the original Software and provide the date(s) of such modifications.
+Grant back to AI, without any restrictions or limitations, a non-exclusive, perpetual, irrevocable, royalty-free, assignable and sub-licensable license, to reproduce, publicly perform or display, install, use, modify, distribute, make and have made, and transfer your modifications to and/or derivative works of the Software source code or data, for any purpose.  
+Acknowledge that any feedback about the Software provided by you to us is voluntarily given, and AI shall be free to use the feedback as it sees fit without obligation or restriction of any kind.
+ADDITIONAL TERMS:
+THE SOFTWARE COMES “AS IS”, WITH NO WARRANTIES. THIS MEANS NO EXPRESS, IMPLIED OR STATUTORY WARRANTY, INCLUDING WITHOUT LIMITATION, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, ANY WARRANTY AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE SOFTWARE OR ANY WARRANTY OF TITLE OR NON-INFRINGEMENT. THERE IS NO WARRANTY THAT THIS SOFTWARE WILL FULFILL ANY OF YOUR PARTICULAR PURPOSES OR NEEDS. 
+NEITHER AI NOR ANY CONTRIBUTOR TO THE SOFTWARE WILL BE LIABLE FOR ANY DAMAGES RELATED TO THE SOFTWARE OR THIS LICENSE, INCLUDING DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL OR INCIDENTAL DAMAGES, TO THE MAXIMUM EXTENT THE LAW PERMITS, NO MATTER WHAT LEGAL THEORY IT IS BASED ON. ALSO, YOU MUST PASS THIS LIMITATION OF LIABILITY ON WHENEVER YOU DISTRIBUTE THE SOFTWARE OR DERIVATIVE WORKS.
+We have no duty of reasonable care or lack of negligence, and we are not obligated to (and will not) provide technical support for the Software.
+If you breach this License or if you sue anyone over any intellectual property regarding the Software, or another party’s use thereof, this License and your rights herein shall terminate automatically.  You will immediately cease all use and distribution of the Software and destroy any copies or portions of the Software in your possession.  Sections 5, 6, 7, 8, 9, 10, 13 and 14 of this License shall survive any termination of this License.
+The intellectual property rights, if any, granted to you in this License only apply to the Software, not to any derivative works you make.
+The Software may be subject to U.S. export jurisdiction at the time it is licensed to you, and it may be subject to additional export or import laws in other places.  You agree to comply with all such laws and regulations that may apply to the Software after delivery of the software to you.
+All rights not expressly granted to you in this License are reserved.  This License does not convey an ownership right to you or any third party.
+
+This License shall be construed and controlled by the laws of the State of Washington, USA, without regard to conflicts of law.  If any provision of this License shall be deemed unenforceable or contrary to law, the rest of this License shall remain in full effect and interpreted in an enforceable manner that most nearly captures the intent of the original language.
+ 
+By downloading this software you acknowledge that you read and agreed all the terms in this license.
