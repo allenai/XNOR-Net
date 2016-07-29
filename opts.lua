@@ -16,7 +16,7 @@ function M.parse(arg)
     cmd:text('Options:')
     ------------ General options --------------------
 
-    cmd:option('-cache', '/mnt/raid00/' .. os.getenv('USER') ..'/NNExpLog/imagenet1k/', 'subdirectory in which to save/log experiments')
+    cmd:option('-cache', './cache/', 'subdirectory in which to save/log experiments')
     cmd:option('-data', './imagenet/imagenet_raw_images/256', 'Home of ImageNet dataset')
     cmd:option('-dataset',  'imagenet', 'Dataset Name: imagenet |cifar')
     cmd:option('-manualSeed',         2, 'Manually set RNG seed')
@@ -41,6 +41,7 @@ function M.parse(arg)
     cmd:option('-weightDecay',     0, 'weight decay')
     cmd:option('-shareGradInput',  true, 'Sharing the gradient memory')
     cmd:option('-binaryWeight',    false, 'Sharing the gradient memory')
+    cmd:option('-testOnly',    false, 'Sharing the gradient memory')
     ---------- Model options ----------------------------------
     cmd:option('-netType',     'alexnet', 'Options: alexnet | overfeat | alexnetowtbn | vgg | googlenet | resnet')
     cmd:option('-optimType',     'sgd', 'Options: sgd | adam')

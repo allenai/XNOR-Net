@@ -82,7 +82,7 @@ function updateBinaryGradWeight(convNodes)
     local m = convNodes[i].weight:norm(1,4):sum(3):sum(2):div(n):expand(s);
     m[convNodes[i].weight:le(-1)]=0;
     m[convNodes[i].weight:ge(1)]=0;
-    m:add(1/(n)):mul(1-1/s[2]);
+    m:add(1/(n)):mul(1-1/s[2]):mul(n);
     convNodes[i].gradWeight:cmul(m)--:cmul(mg)
    end
    if opt.nGPU >1 then

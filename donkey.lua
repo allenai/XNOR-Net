@@ -56,10 +56,14 @@ local mean,std
 
 -- function to load the image, jitter it appropriately (random crops etc.)
 local trainHook = function(self, path)
+   if string.find(path,"/mnt/raid00/data/imagenet2012") then
+     path = string.gsub(path ,"/mnt/raid00/data/imagenet2012",opt.data)
+   end
    collectgarbage()
    opt.testMode = false
    local excep, input = pcall(loadImage,path);
    if not excep then
+      print('ERROR: image can not be loaded!!!')
       input = torch.Tensor(3,opt.imageSize,opt.imageSize):fill(mean[1]);
    end
    local iW = input:size(3)
@@ -87,9 +91,13 @@ if paths.filep(trainCache) then
    print('Loading train metadata from cache')
    trainLoader = torch.load(trainCache)
    trainLoader.sampleHookTrain = trainHook
-   assert(trainLoader.paths[1] == paths.concat(opt.data, 'train'),
-          'cached files dont have the same path as opt.data. Remove your cached files at: '
-             .. trainCache .. ' and rerun the program')
+   --assert(trainLoader.paths[1] == paths.concat(opt.data, 'train'),
+   --       'cached files dont have the same path as opt.data. Remove your cached files at: '
+   --          .. trainCache .. ' and rerun the program')
+   if trainLoader.paths[1] ~= paths.concat(opt.data, 'train') then
+      trainLoader.paths[1] = paths.concat(opt.data, 'train');
+   end
+
 else
    print('Creating train metadata')
    trainLoader = dataLoader{
@@ -122,11 +130,15 @@ end
 
 -- function to load the image
 testHook = function(self, path)
+   if string.find(path,"/mnt/raid00/data/imagenet2012") then
+     path = string.gsub(path ,"/mnt/raid00/data/imagenet2012",opt.data)
+   end
    collectgarbage()
    opt.testMode = true
    local excep, input = pcall(loadImage,path);
    if not excep then
-      input = torch.CudaTensor(3,opt.imageSize,opt.imageSize):fill(mean[1]);
+      print('ERROR: image can not be loaded!!!')
+      input = torch.Tensor(3,opt.imageSize,opt.imageSize):fill(mean[1]);
    end
    local oH = sampleSize[2]
    local oW = sampleSize[3]
@@ -147,9 +159,12 @@ if paths.filep(testCache) then
    print('Loading test metadata from cache')
    testLoader = torch.load(testCache)
    testLoader.sampleHookTest = testHook
-   assert(testLoader.paths[1] == paths.concat(opt.data, 'val'),
-          'cached files dont have the same path as opt.data. Remove your cached files at: '
-             .. testCache .. ' and rerun the program')
+   --assert(testLoader.paths[1] == paths.concat(opt.data, 'val'),
+   --       'cached files dont have the same path as opt.data. Remove your cached files at: '
+   --          .. testCache .. ' and rerun the program')
+   if testLoader.paths[1] ~= paths.concat(opt.data, 'val') then
+      testLoader.paths[1] = paths.concat(opt.data, 'val');
+   end
 else
    print('Creating test metadata')
    testLoader = dataLoader{

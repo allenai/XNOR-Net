@@ -36,10 +36,7 @@ else
       loadParams(model,saved_model);
    end
 end
-
-debugger.enter()
-
-
+--debugger.enter()
 -- This is useful for fitting ResNet-50 on 4 GPUs, but requires that all
 -- containers override backwards to call backwards recursively on submodules
 if opt.shareGradInput then

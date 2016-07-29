@@ -28,7 +28,7 @@ function test()
    if opt.binaryWeight then
       binarizeConvParms(convNodes)
    end
-
+   
    top1Sum = 0
    top5Sum = 0
    loss = 0
