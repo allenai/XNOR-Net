@@ -182,6 +182,9 @@ function trainBatch(inputsCPU, labelsCPU)
     if opt.binaryWeight then
       parameters:copy(realParams)
       updateBinaryGradWeight(convNodes)
+      if opt.optimType == 'adam' then
+        gradParameters:mul(1e+9);
+      end
       if opt.nGPU >1 then
         model:syncParameters()
       end
