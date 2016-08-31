@@ -16,7 +16,7 @@ function M.parse(arg)
     cmd:text('Options:')
     ------------ General options --------------------
 
-    cmd:option('-cache', '/mnt/raid00/' .. os.getenv('USER') ..'/NNExpLog/imagenet1k/', 'subdirectory in which to save/log experiments')
+    cmd:option('-cache', './cache/', 'subdirectory in which to save/log experiments')
     cmd:option('-data', './imagenet/imagenet_raw_images/256', 'Home of ImageNet dataset')
     cmd:option('-dataset',  'imagenet', 'Dataset Name: imagenet |cifar')
     cmd:option('-manualSeed',         2, 'Manually set RNG seed')
